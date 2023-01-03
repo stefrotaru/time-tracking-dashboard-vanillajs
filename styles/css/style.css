@@ -84,6 +84,8 @@ body {
         .grid__stat.work .work__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.work .work__content:hover {
+          background-color: #292f70; }
     .grid__stat.play {
       grid-area: play; }
       .grid__stat.play .play__top {
@@ -115,6 +117,8 @@ body {
         .grid__stat.play .play__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.play .play__content:hover {
+          background-color: #292f70; }
     .grid__stat.study {
       grid-area: study; }
       .grid__stat.study .study__top {
@@ -146,6 +150,8 @@ body {
         .grid__stat.study .study__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.study .study__content:hover {
+          background-color: #292f70; }
     .grid__stat.exercise {
       grid-area: exercise; }
       .grid__stat.exercise .exercise__top {
@@ -177,6 +183,8 @@ body {
         .grid__stat.exercise .exercise__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.exercise .exercise__content:hover {
+          background-color: #292f70; }
     .grid__stat.social {
       grid-area: social; }
       .grid__stat.social .social__top {
@@ -208,6 +216,8 @@ body {
         .grid__stat.social .social__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.social .social__content:hover {
+          background-color: #292f70; }
     .grid__stat.self-care {
       grid-area: self-care; }
       .grid__stat.self-care .self-care__top {
@@ -239,6 +249,11 @@ body {
         .grid__stat.self-care .self-care__content__footer {
           padding: .5rem 0;
           font-size: .75rem; }
+        .grid__stat.self-care .self-care__content:hover {
+          background-color: #292f70; }
+
+.on {
+  color: whitesmoke; }
 
 @media (max-width: 865px) {
   .grid {
