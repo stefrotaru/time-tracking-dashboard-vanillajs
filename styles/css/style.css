@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Rubik', sans-serif; }
+
+body {
+  color: #bdc1ff;
+  background-color: #0f1424; }
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "user   work    play    study  " "user exercise social self-care";
+  place-content: center;
+  gap: 1rem; }
+  .grid__user-card {
+    background-color: #1c1f4a;
+    border-radius: .65rem;
+    padding-bottom: 1rem;
+    margin-top: 10px;
+    grid-area: user; }
+    .grid__user-card__top {
+      background-color: #5746ea;
+      height: 70%;
+      border-radius: .65rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .grid__user-card__top img {
+        max-width: 80px;
+        border: 2px solid white;
+        border-radius: 50%; }
+      .grid__user-card__top p {
+        font-size: .65rem; }
+      .grid__user-card__top h1 {
+        font-size: 1.5rem;
+        font-weight: 400; }
+    .grid__user-card__filters {
+      display: flex;
+      flex-direction: column; }
+    .grid__user-card a {
+      text-decoration: none;
+      padding: 1rem 0 0 1rem; }
+    .grid__user-card a:hover {
+      color: whitesmoke; }
+  .grid__stat {
+    max-height: 300px;
+    max-width: 300px; }
+    .grid__stat.work {
+      grid-area: work; }
+      .grid__stat.work .work__top {
+        height: 50px;
+        background: url(../../images/icon-work.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #ff8c66;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.work .work__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.work .work__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.work .work__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.work .work__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+    .grid__stat.play {
+      grid-area: play; }
+      .grid__stat.play .play__top {
+        height: 50px;
+        background: url(../../images/icon-play.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #56c2e6;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.play .play__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.play .play__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.play .play__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.play .play__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+    .grid__stat.study {
+      grid-area: study; }
+      .grid__stat.study .study__top {
+        height: 50px;
+        background: url(../../images/icon-study.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #ff5c7c;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.study .study__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.study .study__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.study .study__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.study .study__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+    .grid__stat.exercise {
+      grid-area: exercise; }
+      .grid__stat.exercise .exercise__top {
+        height: 50px;
+        background: url(../../images/icon-exercise.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #4acf81;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.exercise .exercise__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.exercise .exercise__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.exercise .exercise__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.exercise .exercise__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+    .grid__stat.social {
+      grid-area: social; }
+      .grid__stat.social .social__top {
+        height: 50px;
+        background: url(../../images/icon-social.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #7536d3;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.social .social__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.social .social__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.social .social__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.social .social__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+    .grid__stat.self-care {
+      grid-area: self-care; }
+      .grid__stat.self-care .self-care__top {
+        height: 50px;
+        background: url(../../images/icon-self-care.svg) no-repeat;
+        background-position-x: 90%;
+        background-color: #f1c65b;
+        border-top-left-radius: .65rem;
+        border-top-right-radius: .65rem;
+        z-index: 2;
+        transform: translateY(10px); }
+      .grid__stat.self-care .self-care__content {
+        position: relative;
+        z-index: 3;
+        background: #1c1f4a;
+        width: 200px;
+        border-radius: .65rem;
+        padding: 1rem; }
+        .grid__stat.self-care .self-care__content__header {
+          font-size: .65rem;
+          color: whitesmoke;
+          padding-bottom: 1rem;
+          display: flex;
+          justify-content: space-between; }
+        .grid__stat.self-care .self-care__content__main {
+          color: whitesmoke;
+          font-size: 2.25rem;
+          font-weight: 300; }
+        .grid__stat.self-care .self-care__content__footer {
+          padding: .5rem 0;
+          font-size: .75rem; }
+
+@media (max-width: 865px) {
+  .grid {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    place-content: unset; }
+    .grid__user-card__top {
+      flex-direction: row;
+      align-items: center; }
+    .grid__user-card__filters {
+      flex-direction: row;
+      justify-content: space-around; }
+    .grid__stat {
+      max-width: unset; }
+      .grid__stat div:nth-child(2) {
+        width: unset !important; } }
